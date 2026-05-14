@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, ShieldCheck, Zap, Cpu, IndianRupee } from 'lucide-react';
-import LaptopMockup from './LaptopMockup';
+import ProductShowcase from './ProductShowcase';
 
 const GUMROAD_URL = 'https://insightful571.gumroad.com/l/noicxm';
 
@@ -92,9 +92,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Mockup */}
+          {/* Product showcase */}
           <div className="lg:col-span-6">
-            <LaptopMockup />
+            <ProductShowcase />
           </div>
         </div>
       </div>

@@ -1,5 +1,8 @@
 import React from 'react';
-import { Receipt, Twitter, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Receipt, Mail } from 'lucide-react';
+
+const GUMROAD_URL = 'https://insightful571.gumroad.com/l/noicxm';
+const CONTACT_EMAIL = 'insighteyecare9988@gmail.com';
 
 export default function Footer() {
   return (
@@ -20,16 +23,16 @@ export default function Footer() {
               The 100% offline, AI-powered GST invoicing tool for Indian small businesses and freelancers. One-time payment. Lifetime access. Your data stays yours.
             </p>
 
-            <div className="mt-5 flex items-center gap-2">
-              <SocialIcon href="https://twitter.com" icon={Twitter} label="Twitter" />
-              <SocialIcon href="https://instagram.com" icon={Instagram} label="Instagram" />
-              <SocialIcon href="https://linkedin.com" icon={Linkedin} label="LinkedIn" />
+            {/* Contact */}
+            <div className="mt-5">
+              <p className="text-xs uppercase tracking-wider font-semibold text-slate-500 mb-2">Get in touch</p>
               <a
-                href="mailto:hello@billbook.in"
-                className="inline-flex items-center gap-2 ml-2 px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors text-xs font-semibold"
+                href={`mailto:${CONTACT_EMAIL}`}
+                data-testid="footer-email"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-blue-600 hover:text-white transition-colors text-sm font-semibold text-slate-200"
               >
-                <Mail className="w-3.5 h-3.5" />
-                hello@billbook.in
+                <Mail className="w-4 h-4" />
+                {CONTACT_EMAIL}
               </a>
             </div>
           </div>
@@ -42,17 +45,17 @@ export default function Footer() {
               { label: 'Features', href: '#features' },
               { label: 'Pricing', href: '#pricing' },
               { label: 'FAQ', href: '#faq' },
-              { label: 'Buy on Gumroad', href: 'https://insightful571.gumroad.com/l/noicxm' },
+              { label: 'Buy on Gumroad', href: GUMROAD_URL },
             ]}
           />
           <FooterCol
             className="md:col-span-2"
             title="Use Cases"
             links={[
-              { label: 'Freelancers', href: '#' },
-              { label: 'Retailers', href: '#' },
-              { label: 'Consultants', href: '#' },
-              { label: 'CA Firms', href: '#' },
+              { label: 'Freelancers', href: '#features' },
+              { label: 'Retailers', href: '#features' },
+              { label: 'Consultants', href: '#features' },
+              { label: 'CA Firms', href: '#features' },
             ]}
           />
           <FooterCol
@@ -83,24 +86,10 @@ export default function Footer() {
   );
 }
 
-function SocialIcon({ href, icon: Icon, label }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={label}
-      className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
-    >
-      <Icon className="w-4 h-4 text-slate-300" />
-    </a>
-  );
-}
-
 function FooterCol({ title, links, className = '' }) {
   return (
     <div className={className}>
-      <h4 className="text-sm font-bold text-white mb-4 tracking-wide uppercase text-xs">{title}</h4>
+      <h4 className="text-xs font-bold text-white mb-4 tracking-wide uppercase">{title}</h4>
       <ul className="space-y-2.5">
         {links.map((l) => (
           <li key={l.label}>
