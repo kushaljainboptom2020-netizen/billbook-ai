@@ -26,17 +26,41 @@ export default function Trust() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-blue-600/5 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-700 text-xs font-semibold mb-4">
             <ShieldCheck className="w-3.5 h-3.5" />
             Private by Default
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Your business data is <span className="bb-gradient-text">yours alone</span>.
+            <span className="bb-gradient-text">Local Data Privacy</span> for Small Business.
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            BillBook AI runs entirely inside your browser. There is no cloud, no account, and no “data processing agreement.” Just software that works for you — not on you.
+            BillBook AI runs entirely inside your browser. There is no cloud, no account, and no &ldquo;data processing agreement.&rdquo; Just software that works for you &mdash; not on you.
           </p>
+        </div>
+
+        {/* "No Internet = No Data Leaks" hero callout */}
+        <div className="mb-12 lg:mb-14 max-w-4xl mx-auto">
+          <div className="relative rounded-3xl overflow-hidden border-2 border-blue-200 bg-white p-6 sm:p-8 lg:p-10 shadow-lg shadow-blue-600/5">
+            <div className="absolute -right-10 -top-10 w-48 h-48 rounded-full bg-blue-600/5 blur-2xl pointer-events-none" />
+            <div className="absolute -left-10 -bottom-10 w-48 h-48 rounded-full bg-green-500/5 blur-2xl pointer-events-none" />
+            <div className="relative flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-center sm:text-left">
+              <div className="shrink-0 w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-xl shadow-blue-600/30">
+                <ShieldCheck className="w-10 h-10 text-white" strokeWidth={2.25} />
+              </div>
+              <div className="flex-1">
+                <p className="text-xs font-bold uppercase tracking-wider text-blue-600 mb-1">Our #1 trust promise</p>
+                <p className="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+                  <span className="bb-gradient-text">No Internet</span>{' '}
+                  <span className="text-slate-400 font-black">=</span>{' '}
+                  <span>No Data Leaks.</span>
+                </p>
+                <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">
+                  BillBook AI cannot send your invoices, clients or receipts to anyone &mdash; because it has no server to send them to. Your data is mathematically incapable of leaking.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Pillars */}

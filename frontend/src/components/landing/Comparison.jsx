@@ -5,6 +5,7 @@ const GUMROAD_URL = 'https://insightful571.gumroad.com/l/noicxm';
 
 const rows = [
   { feature: 'Pricing Model', billbook: 'One-time ₹299', zoho: '₹749/month', tally: '₹18,000+ once', quickbooks: '₹999/month' },
+  { feature: '1-Year Total Cost', billbook: '₹299 (lifetime)', zoho: '₹8,988', tally: '₹18,000+', quickbooks: '₹11,988' },
   { feature: '5-Year Total Cost', billbook: '₹299', zoho: '₹44,940', tally: '₹18,000+', quickbooks: '₹59,940' },
   { feature: 'Works Offline', billbook: true, zoho: false, tally: true, quickbooks: false },
   { feature: 'AI Receipt Scanner', billbook: true, zoho: 'Paid Add-on', tally: false, quickbooks: 'Paid Add-on' },
@@ -25,10 +26,12 @@ export default function Comparison() {
             The SaaS Pricing Problem
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Why pay <span className="bb-gradient-text">forever</span> when you can pay <span className="underline decoration-blue-600 decoration-4 underline-offset-4">once</span>?
+            The <span className="bb-gradient-text">No-Subscription GST Tool</span>
+            <br />
+            built for India in 2026.
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            See how BillBook AI ends the subscription trap that’s draining Indian small businesses.
+            BillBook AI replaces ₹5,000+/year SaaS subscriptions with a single ₹299 lifetime purchase. Here's how it stacks up.
           </p>
         </div>
 

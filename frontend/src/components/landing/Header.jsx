@@ -15,6 +15,7 @@ export default function Header() {
 
   const navLinks = [
     { label: 'Features', href: '#features' },
+    { label: 'Voice AI', href: '#voice-ai' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Privacy', href: '#privacy' },
     { label: 'FAQ', href: '#faq' },

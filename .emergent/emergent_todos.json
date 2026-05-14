@@ -1,42 +1,34 @@
 [
   {
-    "content": "Update index.html with SEO meta tags + Inter font",
+    "content": "Update meta title, description, keywords + add FAQPage JSON-LD schema",
     "status": "completed"
   },
   {
-    "content": "Update index.css with royal blue theme + custom styles",
+    "content": "Rewrite Hero H1 to SEO title + keep punchy visual hierarchy",
     "status": "completed"
   },
   {
-    "content": "Build Hero section component",
+    "content": "Update Comparison H2 to 'No-Subscription GST Tool'",
     "status": "completed"
   },
   {
-    "content": "Build Comparison table (Problem vs Solution)",
+    "content": "Update Trust H2 to 'Local Data Privacy for Small Business' + 'No Internet = No Data Leaks' hero callout",
     "status": "completed"
   },
   {
-    "content": "Build 6 Features cards grid",
+    "content": "Build new VoiceAI section with H2 'AI Voice-Powered Invoicing' + voice-to-invoice demo",
     "status": "completed"
   },
   {
-    "content": "Build Trust & Privacy section",
+    "content": "Update FAQ with required 3 questions + FAQPage schema",
     "status": "completed"
   },
   {
-    "content": "Build FAQ section (SEO-optimized)",
+    "content": "Add MobileStickyCTA for mobile users",
     "status": "completed"
   },
   {
-    "content": "Build Header + Footer",
-    "status": "completed"
-  },
-  {
-    "content": "Assemble App.js and test responsiveness",
-    "status": "completed"
-  },
-  {
-    "content": "Final visual QA via screenshot",
+    "content": "Visual QA across desktop + mobile",
     "status": "completed"
   }
 ]
