@@ -30,6 +30,10 @@ export default function Comparison() {
             <br />
             built for India in 2026.
           </h2>
+          {/* SEO H2 — frustration keyword */}
+          <h2 className="mt-4 text-lg sm:text-xl font-bold text-blue-700 tracking-tight">
+            The #1 Tally alternative with a one-time payment.
+          </h2>
           <p className="mt-4 text-lg text-slate-600">
             BillBook AI replaces ₹5,000+/year SaaS subscriptions with a single ₹299 lifetime purchase. Here's how it stacks up.
           </p>

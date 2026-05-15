@@ -62,6 +62,10 @@ export default function Features() {
             <br />
             <span className="text-slate-900">Nothing you don’t.</span>
           </h2>
+          {/* SEO H2 — frustration keyword */}
+          <h2 className="mt-4 text-lg sm:text-xl font-bold text-blue-700 tracking-tight">
+            How to make GST bills offline for free — in 30 seconds, forever.
+          </h2>
           <p className="mt-4 text-lg text-slate-600">
             BillBook AI bundles six essential modules into a single, blazing-fast, offline tool. No bloat. No ads. No nonsense.
           </p>

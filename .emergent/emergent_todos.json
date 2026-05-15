@@ -1,34 +1,34 @@
 [
   {
-    "content": "Update meta title, description, keywords + add FAQPage JSON-LD schema",
+    "content": "Add 'Best Lifetime GST Billing Software India' as H2 in Hero",
     "status": "completed"
   },
   {
-    "content": "Rewrite Hero H1 to SEO title + keep punchy visual hierarchy",
+    "content": "Add 'How to make GST bills offline for free' as H2 in Features",
     "status": "completed"
   },
   {
-    "content": "Update Comparison H2 to 'No-Subscription GST Tool'",
+    "content": "Add 'Tally alternative one-time payment' as H2 in Comparison",
     "status": "completed"
   },
   {
-    "content": "Update Trust H2 to 'Local Data Privacy for Small Business' + 'No Internet = No Data Leaks' hero callout",
+    "content": "Build /gst-calculator page (calc + GST breakdown + bottom CTA)",
     "status": "completed"
   },
   {
-    "content": "Build new VoiceAI section with H2 'AI Voice-Powered Invoicing' + voice-to-invoice demo",
+    "content": "Wire React Router routes in App.js",
     "status": "completed"
   },
   {
-    "content": "Update FAQ with required 3 questions + FAQPage schema",
+    "content": "Add GST Calculator link in Header nav",
     "status": "completed"
   },
   {
-    "content": "Add MobileStickyCTA for mobile users",
+    "content": "Update canonical/og:url to mybilbook.in + add robots.txt + sitemap.xml",
     "status": "completed"
   },
   {
-    "content": "Visual QA across desktop + mobile",
+    "content": "Visual QA: landing H2 changes + new calculator page (desktop+mobile)",
     "status": "completed"
   }
 ]

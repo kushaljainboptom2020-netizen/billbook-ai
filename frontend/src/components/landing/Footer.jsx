@@ -76,8 +76,8 @@ export default function Footer() {
           </p>
           <p className="text-xs text-slate-500">
             Made with <span className="text-blue-400 font-semibold">BillBook</span> •{' '}
-            <a href="https://billbook.in" className="text-blue-400 hover:text-blue-300 underline-offset-2 hover:underline">
-              billbook.in
+            <a href="https://mybilbook.in" className="text-blue-400 hover:text-blue-300 underline-offset-2 hover:underline">
+              mybilbook.in
             </a>
           </p>
         </div>

@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Receipt } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, Receipt, Calculator } from 'lucide-react';
 
 const GUMROAD_URL = 'https://insightful571.gumroad.com/l/noicxm';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  const isLanding = location.pathname === '/';
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -13,19 +16,20 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Use absolute paths so anchors work on every route
   const navLinks = [
-    { label: 'Features', href: '#features' },
-    { label: 'Voice AI', href: '#voice-ai' },
-    { label: 'Pricing', href: '#pricing' },
-    { label: 'Privacy', href: '#privacy' },
-    { label: 'FAQ', href: '#faq' },
+    { label: 'Features', href: '/#features' },
+    { label: 'Voice AI', href: '/#voice-ai' },
+    { label: 'Pricing', href: '/#pricing' },
+    { label: 'Privacy', href: '/#privacy' },
+    { label: 'FAQ', href: '/#faq' },
   ];
 
   return (
     <header
       data-testid="site-header"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || !isLanding
           ? 'bg-white/85 backdrop-blur-md border-b border-slate-200 shadow-sm'
           : 'bg-transparent'
       }`}
@@ -33,7 +37,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group" data-testid="logo-link">
+          <Link to="/" className="flex items-center gap-2.5 group" data-testid="logo-link">
             <div className="relative">
               <div className="absolute inset-0 bg-blue-600 rounded-lg blur-md opacity-30 group-hover:opacity-50 transition" />
               <div className="relative w-9 h-9 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
@@ -43,20 +47,28 @@ export default function Header() {
             <span className="text-xl font-bold tracking-tight text-slate-900">
               BillBook<span className="text-blue-600"> AI</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-7">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
-                data-testid={`nav-${l.label.toLowerCase()}`}
+                data-testid={`nav-${l.label.toLowerCase().replace(/\s+/g, '-')}`}
               >
                 {l.label}
               </a>
             ))}
+            <Link
+              to="/gst-calculator"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
+              data-testid="nav-gst-calculator"
+            >
+              <Calculator className="w-4 h-4" />
+              GST Calculator
+            </Link>
           </nav>
 
           {/* Desktop CTA */}
@@ -98,6 +110,14 @@ export default function Header() {
                 {l.label}
               </a>
             ))}
+            <Link
+              to="/gst-calculator"
+              onClick={() => setMobileOpen(false)}
+              className="flex items-center gap-2 px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700"
+            >
+              <Calculator className="w-4 h-4" />
+              GST Calculator
+            </Link>
             <a
               href={GUMROAD_URL}
               target="_blank"

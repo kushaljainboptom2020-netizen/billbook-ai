@@ -33,7 +33,12 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            {/* SEO H2 — frustration keyword */}
+            <h2 className="mt-6 text-base sm:text-lg font-bold text-blue-700 tracking-tight">
+              The Best Lifetime GST Billing Software in India — no monthly fees, ever.
+            </h2>
+
+            <p className="mt-3 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Freedom from monthly subscriptions. Generate GST-compliant invoices in{' '}
               <span className="font-semibold text-slate-900">30 seconds</span>, fully offline, with{' '}
               <span className="font-semibold text-slate-900">AI Receipt Scanning</span> and{' '}
