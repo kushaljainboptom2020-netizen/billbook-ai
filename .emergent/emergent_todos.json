@@ -1,34 +1,30 @@
 [
   {
-    "content": "Add 'Best Lifetime GST Billing Software India' as H2 in Hero",
+    "content": "Build /invoice-number-generator page (configurable format + live preview)",
     "status": "completed"
   },
   {
-    "content": "Add 'How to make GST bills offline for free' as H2 in Features",
+    "content": "Build /hsn-code-lookup page (searchable HSN/SAC database with GST rates)",
     "status": "completed"
   },
   {
-    "content": "Add 'Tally alternative one-time payment' as H2 in Comparison",
+    "content": "Curate HSN/SAC dataset (~100 most common codes across categories)",
     "status": "completed"
   },
   {
-    "content": "Build /gst-calculator page (calc + GST breakdown + bottom CTA)",
+    "content": "Update App.js routes + Header nav for new tools",
     "status": "completed"
   },
   {
-    "content": "Wire React Router routes in App.js",
+    "content": "Add Netlify SPA routing (public/_redirects) + netlify.toml build config",
     "status": "completed"
   },
   {
-    "content": "Add GST Calculator link in Header nav",
+    "content": "Update sitemap.xml with new tool pages",
     "status": "completed"
   },
   {
-    "content": "Update canonical/og:url to mybilbook.in + add robots.txt + sitemap.xml",
-    "status": "completed"
-  },
-  {
-    "content": "Visual QA: landing H2 changes + new calculator page (desktop+mobile)",
+    "content": "Visual QA across desktop + mobile",
     "status": "completed"
   }
 ]
